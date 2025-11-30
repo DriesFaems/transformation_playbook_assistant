@@ -89,7 +89,7 @@ if st.button('Start Analysis'):
     GROQ_LLM = ChatGroq(
             # api_key=os.getenv("GROQ_API_KEY"),
             api_key=groq_api_key,
-            model="llama-3.1-8b-instant"
+            model="openai/gpt-oss-20b"
         )
     strategic_readiness_investigator = Agent(
         role='Investigating strategic readiness',
